@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>App</title>
+  </head>
+  <body>
+    <form action="/upload"  enctype="multipart/form-data" method="POST">
+      <p>Image upload</p>
+      <input name="file" type="file"/>
+      <br/>
+      <button type="submit">Send</button>
+    </form>
+    {{message}}
+    <br/>
+    {{#if src}}<img src="{{src}}">{{/if}}
+  </body>
+</html>
